@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<gift:GenericGiftRenderer xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:gift="*" backgroundAlpha="0.75">
+
+    <mx:Script><![CDATA[
+
+        override protected function mouseOut():void {
+            setStyle("borderColor", 0xFFFFFF);
+        }
+
+        override protected function mouseOver():void {
+            setStyle("borderColor", 0xCCCCCC);
+        }
+
+        override public function set data(value:Object):void {
+            image.source = 'lib/images/'+ value.image;
+            text.text = value.name;
+            super.data = value;
+        }
+        ]]>
+    </mx:Script>
+
+</gift:GenericGiftRenderer>
+

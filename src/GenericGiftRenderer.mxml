@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="175" height="175" verticalScrollPolicy="off" horizontalScrollPolicy="off"
+           mouseOver="mouseOver()" mouseOut="mouseOut()" rollOut="doZoom(event)" rollOver="doZoom(event)"
+           borderColor="#FFFFFF" borderStyle="solid" backgroundColor="#FFFFFF">
+    <mx:Script><![CDATA[
+
+        protected function mouseOut():void {
+            setStyle("borderColor", 0xFFFFFF);
+        }
+
+        protected function mouseOver():void {
+            setStyle("borderColor", 0xCCCCCC);
+        }
+
+        public function doZoom(event:MouseEvent):void {
+            if (zoomAll.isPlaying) {
+                zoomAll.reverse();
+            }
+            else {
+                zoomAll.play([image], event.type == MouseEvent.ROLL_OUT);
+            }
+        }
+        ]]>
+
+    </mx:Script>
+
+    <mx:Zoom id="zoomAll" zoomWidthTo="1" zoomHeightTo="1" zoomWidthFrom=".75" zoomHeightFrom=".75"/>
+    <mx:Image id="image" horizontalCenter="0" top="5" scaleX="0.75" scaleY="0.75" smoothBitmapContent="true"/>
+    <mx:Text id="text" horizontalCenter="0" top="130" width="165" selectable="false" color="#723f6a"/>
+</mx:Canvas>

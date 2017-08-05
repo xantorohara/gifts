@@ -1,0 +1,196 @@
+[
+    {
+        "name": "Photo Frame",
+        "image": "frame_ico.png",
+        "id": "ramka"
+    },
+    {
+        "name": "Gift",
+        "image": "present_ico.png",
+        "id": "gift"
+    },
+    {
+        "name": "Books",
+        "image": "books_ico.png",
+        "id": "book01"
+    },
+    {
+        "name": "Cake",
+        "image": "cake_ico.png",
+        "id": "cake01"
+    },
+    {
+        "name": "Dollars",
+        "image": "dollar_pack_ico.png",
+        "id": "gora_dollarov"
+    },
+    {
+        "name": "Bender Bending Rodríguez",
+        "image": "bender_ico.png",
+        "id": "bender"
+    },
+    {
+        "name": "Weight",
+        "image": "weight_ico.png",
+        "id": "girya"
+    },
+    {
+        "name": "WC",
+        "image": "wc_ico.png",
+        "id": "sortir"
+    },
+    {
+        "name": "Slippers",
+        "image": "slipers_ico.png",
+        "id": "tapki"
+    },
+    {
+        "name": "VHS",
+        "image": "vhs_ico.png",
+        "id": "vhs"
+    },
+    {
+        "name": "Heart",
+        "image": "wingsheart_ico.png",
+        "id": "wings_heart"
+    },
+    {
+        "name": "Globe",
+        "image": "globe_ico.png",
+        "id": "globus"
+    },
+    {
+        "name": "Roubles",
+        "image": "rubles_pack_ico.png",
+        "id": "gora_rubley"
+    },
+    {
+        "name": "UFO",
+        "image": "ufo_ico.png",
+        "id": "ufo"
+    },
+
+    {
+        "name": "Watermelon",
+        "image": "watermelon_ico.png",
+        "id": "arbuz"
+    },
+    {
+        "name": "Sick_smile",
+        "image": "sick_smile_ico.png",
+        "id": "smile1"
+    },
+    {
+        "name": "Girly_smile",
+        "image": "girly_smile_ico.png",
+        "id": "smile2"
+    },
+    {
+        "name": "Moustache smile",
+        "image": "moustache_smile_ico.png",
+        "id": "smile3"
+    },
+    {
+        "name": "Goldteeth smile",
+        "image": "goldteeth_smile_ico.png",
+        "id": "smile4"
+    },
+    {
+        "name": "Tung_smile",
+        "image": "tung_smile_ico.png",
+        "id": "smile5"
+    },
+    {
+        "name": "Soccer ball",
+        "image": "footbal_ico.png",
+        "id": "soccer_ball"
+    },
+    {
+        "name": "Zombie",
+        "image": "zombie_ico.png",
+        "id": "zombie"
+    },
+    {
+        "name": "Russian bus",
+        "image": "gazel_ico.png",
+        "id": "gazel"
+    },
+    {
+        "name": "Heart Box",
+        "image": "heartbox_ico.png",
+        "id": "heart_box"
+    },
+    {
+        "name": "Spider",
+        "image": "spider_ico.png",
+        "id": "pauk"
+    },
+
+    {
+        "name": "Diamond",
+        "image": "diamond_ico.png",
+        "id": "diamond"
+    },
+    {
+        "name": "Piggy",
+        "image": "pig_ico.png",
+        "id": "piggy"
+    },
+    {
+        "name": "Teddy bear",
+        "image": "teddy_bear_ico.png",
+        "id": "teddy_bear"
+    },
+    {
+        "name": "Flower",
+        "image": "flow_ico.png",
+        "id": "flower_01"
+    },
+    {
+        "name": "Flowers",
+        "image": "flows2_ico.png",
+        "id": "flower_02"
+    },
+    {
+        "name": "Rose",
+        "image": "rose_ico.png",
+        "id": "flower_03"
+    },
+
+    {
+        "name": "Horse",
+        "image": "horsy_ico.png",
+        "id": "horse"
+    },
+    {
+        "name": "Rubber duck",
+        "image": "duck_ico.png",
+        "id": "rubber_duck"
+    },
+
+    {
+        "name": "Flag",
+        "image": "flag_ico.png",
+        "id": "flag"
+    },
+    {
+        "name": "Victory",
+        "image": "ribbon_ico.png",
+        "id": "georg_lenta"
+    },
+    {
+        "name": "Cascue",
+        "image": "cascue_ico.png",
+        "id": "kaska"
+    },
+    {
+        "name": "Russian hat",
+        "image": "hat_ico.png",
+        "id": "pilotka"
+    },
+    {
+        "name": "Red star",
+        "image": "redsta_ico.png",
+        "id": "red_star"
+    }
+]

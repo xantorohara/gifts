@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="gifts" default="build">
+
+    <property file="local.properties"/>
+
+    <target name="clean">
+        <delete dir="out"/>
+    </target>
+
+    <target name="buildnumber">
+        <buildnumber/>
+        <echo message="Build number: ${build.number}"/>
+        <echo file="src/Version.as"
+              message="package {public final class Version {public static const BUILD_NUMBER:int = ${build.number};}}"/>
+    </target>
+
+    <target name="build" depends="buildnumber">
+        <exec executable="${flex.compiler}" failonerror="true">
+            <arg value="-debug=true"/>
+            <arg value="-output=docs/gifts.swf"/>
+            <arg value="src/gifts.mxml"/>
+        </exec>
+        <copy todir="docs">
+            <fileset dir="web"/>
+        </copy>
+
+    </target>
+</project>

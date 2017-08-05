@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2010-02-11T10:35:57Z</created>
+    <modified>2010-02-11T10:35:57Z</modified>
+    <revision></revision>
+    <title></title>
+    <subject></subject>
+    <keywords></keywords>
+    <unit meter="0,010000"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="main_material" name="main_material">
+      <instance_effect url="#main_material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="main_material-fx" name="main_material">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0,000000  0,000000 0,000000 1,000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0,000000  0,223529 0,631373 1,000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0,000000  0,223529 0,631373 1,000000</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0,000000  0,000000 0,000000 1,000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2,000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0,000000  0,000000 0,000000 1,000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1,000000</float>
+            </reflectivity>
+            <transparent>
+              <color sid="transparent">1,000000  1,000000 1,000000 1,000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0,000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box01-lib" name="Box01Mesh">
+      <mesh>
+        <source id="Box01-lib-Position">
+          <float_array id="Box01-lib-Position-array" count="24">
+-50,000000 -50,000000 0,000000
+50,000000 -50,000000 0,000000
+-50,000000 50,000000 0,000000
+50,000000 50,000000 0,000000
+-50,000000 -50,000000 100,000000
+50,000000 -50,000000 100,000000
+-50,000000 50,000000 100,000000
+50,000000 50,000000 100,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-lib-Position-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-lib-Normal0">
+          <float_array id="Box01-lib-Normal0-array" count="108">
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-lib-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-lib-UV0">
+          <float_array id="Box01-lib-UV0-array" count="24">
+0,000000 0,000000
+1,000000 0,000000
+0,000000 1,000000
+1,000000 1,000000
+0,000000 0,000000
+1,000000 0,000000
+0,000000 1,000000
+1,000000 1,000000
+0,000000 0,000000
+1,000000 0,000000
+0,000000 1,000000
+1,000000 1,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-lib-UV0-array" count="12" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box01-lib-Vertex">
+          <input semantic="POSITION" source="#Box01-lib-Position"/>
+        </vertices>
+        <polygons material="main_material" count="12">
+          <input semantic="VERTEX" offset="0" source="#Box01-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#Box01-lib-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Box01-lib-UV0"/>
+          <p>0 0 9 2 1 11 3 2 10</p>
+          <p>3 3 10 1 4 8 0 5 9</p>
+          <p>4 6 8 5 7 9 7 8 11</p>
+          <p>7 9 11 6 10 10 4 11 8</p>
+          <p>0 12 4 1 13 5 5 14 7</p>
+          <p>5 15 7 4 16 6 0 17 4</p>
+          <p>1 18 0 3 19 1 7 20 3</p>
+          <p>7 21 3 5 22 2 1 23 0</p>
+          <p>3 24 4 2 25 5 6 26 7</p>
+          <p>6 27 7 7 28 6 3 29 4</p>
+          <p>2 30 0 0 31 1 4 32 3</p>
+          <p>4 33 3 6 34 2 2 35 0</p>
+        </polygons>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations>
+    <animation id="Box01-anim" name="Box01">
+      <animation>
+        <source id="Box01-translate-animation-inputX">
+          <float_array id="Box01-translate-animation-inputX-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-inputX-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-outputX">
+          <float_array id="Box01-translate-animation-outputX-array" count="3">
+-1,914886 -1,914886 -1,914886
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-outputX-array" count="3">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-intanX">
+          <float_array id="Box01-translate-animation-intanX-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-intanX-array" count="3">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-outtanX">
+          <float_array id="Box01-translate-animation-outtanX-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-outtanX-array" count="3">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-interpolationX">
+          <Name_array id="Box01-translate-animation-interpolationX-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-interpolationX-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-translate-animationX">
+          <input semantic="INPUT" source="#Box01-translate-animation-inputX"/>
+          <input semantic="OUTPUT" source="#Box01-translate-animation-outputX"/>
+          <input semantic="IN_TANGENT" source="#Box01-translate-animation-intanX"/>
+          <input semantic="OUT_TANGENT" source="#Box01-translate-animation-outtanX"/>
+          <input semantic="INTERPOLATION" source="#Box01-translate-animation-interpolationX"/>
+        </sampler>
+        <channel source="#Box01-translate-animationX" target="Box01/translate.X"/>
+      </animation>
+      <animation>
+        <source id="Box01-translate-animation-inputY">
+          <float_array id="Box01-translate-animation-inputY-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-inputY-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-outputY">
+          <float_array id="Box01-translate-animation-outputY-array" count="3">
+-3,877941 -3,877941 -3,877941
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-outputY-array" count="3">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-intanY">
+          <float_array id="Box01-translate-animation-intanY-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-intanY-array" count="3">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-outtanY">
+          <float_array id="Box01-translate-animation-outtanY-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-outtanY-array" count="3">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-interpolationY">
+          <Name_array id="Box01-translate-animation-interpolationY-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-interpolationY-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-translate-animationY">
+          <input semantic="INPUT" source="#Box01-translate-animation-inputY"/>
+          <input semantic="OUTPUT" source="#Box01-translate-animation-outputY"/>
+          <input semantic="IN_TANGENT" source="#Box01-translate-animation-intanY"/>
+          <input semantic="OUT_TANGENT" source="#Box01-translate-animation-outtanY"/>
+          <input semantic="INTERPOLATION" source="#Box01-translate-animation-interpolationY"/>
+        </sampler>
+        <channel source="#Box01-translate-animationY" target="Box01/translate.Y"/>
+      </animation>
+      <animation>
+        <source id="Box01-translate-animation-inputZ">
+          <float_array id="Box01-translate-animation-inputZ-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-inputZ-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-outputZ">
+          <float_array id="Box01-translate-animation-outputZ-array" count="3">
+0,000000 62,859924 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-outputZ-array" count="3">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-intanZ">
+          <float_array id="Box01-translate-animation-intanZ-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-intanZ-array" count="3">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-outtanZ">
+          <float_array id="Box01-translate-animation-outtanZ-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-outtanZ-array" count="3">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-translate-animation-interpolationZ">
+          <Name_array id="Box01-translate-animation-interpolationZ-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-translate-animation-interpolationZ-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-translate-animationZ">
+          <input semantic="INPUT" source="#Box01-translate-animation-inputZ"/>
+          <input semantic="OUTPUT" source="#Box01-translate-animation-outputZ"/>
+          <input semantic="IN_TANGENT" source="#Box01-translate-animation-intanZ"/>
+          <input semantic="OUT_TANGENT" source="#Box01-translate-animation-outtanZ"/>
+          <input semantic="INTERPOLATION" source="#Box01-translate-animation-interpolationZ"/>
+        </sampler>
+        <channel source="#Box01-translate-animationZ" target="Box01/translate.Z"/>
+      </animation>
+      <animation>
+        <source id="Box01-rotateX-animation-inputANGLE">
+          <float_array id="Box01-rotateX-animation-inputANGLE-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateX-animation-inputANGLE-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateX-animation-outputANGLE">
+          <float_array id="Box01-rotateX-animation-outputANGLE-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateX-animation-outputANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateX-animation-intanANGLE">
+          <float_array id="Box01-rotateX-animation-intanANGLE-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateX-animation-intanANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateX-animation-outtanANGLE">
+          <float_array id="Box01-rotateX-animation-outtanANGLE-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateX-animation-outtanANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateX-animation-interpolationANGLE">
+          <Name_array id="Box01-rotateX-animation-interpolationANGLE-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-rotateX-animation-interpolationANGLE-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-rotateX-animationANGLE">
+          <input semantic="INPUT" source="#Box01-rotateX-animation-inputANGLE"/>
+          <input semantic="OUTPUT" source="#Box01-rotateX-animation-outputANGLE"/>
+          <input semantic="IN_TANGENT" source="#Box01-rotateX-animation-intanANGLE"/>
+          <input semantic="OUT_TANGENT" source="#Box01-rotateX-animation-outtanANGLE"/>
+          <input semantic="INTERPOLATION" source="#Box01-rotateX-animation-interpolationANGLE"/>
+        </sampler>
+        <channel source="#Box01-rotateX-animationANGLE" target="Box01/rotateX.ANGLE"/>
+      </animation>
+      <animation>
+        <source id="Box01-rotateY-animation-inputANGLE">
+          <float_array id="Box01-rotateY-animation-inputANGLE-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateY-animation-inputANGLE-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateY-animation-outputANGLE">
+          <float_array id="Box01-rotateY-animation-outputANGLE-array" count="3">
+-0,000000 -0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateY-animation-outputANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateY-animation-intanANGLE">
+          <float_array id="Box01-rotateY-animation-intanANGLE-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateY-animation-intanANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateY-animation-outtanANGLE">
+          <float_array id="Box01-rotateY-animation-outtanANGLE-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateY-animation-outtanANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateY-animation-interpolationANGLE">
+          <Name_array id="Box01-rotateY-animation-interpolationANGLE-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-rotateY-animation-interpolationANGLE-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-rotateY-animationANGLE">
+          <input semantic="INPUT" source="#Box01-rotateY-animation-inputANGLE"/>
+          <input semantic="OUTPUT" source="#Box01-rotateY-animation-outputANGLE"/>
+          <input semantic="IN_TANGENT" source="#Box01-rotateY-animation-intanANGLE"/>
+          <input semantic="OUT_TANGENT" source="#Box01-rotateY-animation-outtanANGLE"/>
+          <input semantic="INTERPOLATION" source="#Box01-rotateY-animation-interpolationANGLE"/>
+        </sampler>
+        <channel source="#Box01-rotateY-animationANGLE" target="Box01/rotateY.ANGLE"/>
+      </animation>
+      <animation>
+        <source id="Box01-rotateZ-animation-inputANGLE">
+          <float_array id="Box01-rotateZ-animation-inputANGLE-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateZ-animation-inputANGLE-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateZ-animation-outputANGLE">
+          <float_array id="Box01-rotateZ-animation-outputANGLE-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateZ-animation-outputANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateZ-animation-intanANGLE">
+          <float_array id="Box01-rotateZ-animation-intanANGLE-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateZ-animation-intanANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateZ-animation-outtanANGLE">
+          <float_array id="Box01-rotateZ-animation-outtanANGLE-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-rotateZ-animation-outtanANGLE-array" count="3">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-rotateZ-animation-interpolationANGLE">
+          <Name_array id="Box01-rotateZ-animation-interpolationANGLE-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-rotateZ-animation-interpolationANGLE-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-rotateZ-animationANGLE">
+          <input semantic="INPUT" source="#Box01-rotateZ-animation-inputANGLE"/>
+          <input semantic="OUTPUT" source="#Box01-rotateZ-animation-outputANGLE"/>
+          <input semantic="IN_TANGENT" source="#Box01-rotateZ-animation-intanANGLE"/>
+          <input semantic="OUT_TANGENT" source="#Box01-rotateZ-animation-outtanANGLE"/>
+          <input semantic="INTERPOLATION" source="#Box01-rotateZ-animation-interpolationANGLE"/>
+        </sampler>
+        <channel source="#Box01-rotateZ-animationANGLE" target="Box01/rotateZ.ANGLE"/>
+      </animation>
+      <animation>
+        <source id="Box01-scale-animation-inputX">
+          <float_array id="Box01-scale-animation-inputX-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-inputX-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-outputX">
+          <float_array id="Box01-scale-animation-outputX-array" count="3">
+1,000000 1,000000 1,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-outputX-array" count="3">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-intanX">
+          <float_array id="Box01-scale-animation-intanX-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-intanX-array" count="3">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-outtanX">
+          <float_array id="Box01-scale-animation-outtanX-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-outtanX-array" count="3">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-interpolationX">
+          <Name_array id="Box01-scale-animation-interpolationX-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-interpolationX-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-scale-animationX">
+          <input semantic="INPUT" source="#Box01-scale-animation-inputX"/>
+          <input semantic="OUTPUT" source="#Box01-scale-animation-outputX"/>
+          <input semantic="IN_TANGENT" source="#Box01-scale-animation-intanX"/>
+          <input semantic="OUT_TANGENT" source="#Box01-scale-animation-outtanX"/>
+          <input semantic="INTERPOLATION" source="#Box01-scale-animation-interpolationX"/>
+        </sampler>
+        <channel source="#Box01-scale-animationX" target="Box01/scale.X"/>
+      </animation>
+      <animation>
+        <source id="Box01-scale-animation-inputY">
+          <float_array id="Box01-scale-animation-inputY-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-inputY-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-outputY">
+          <float_array id="Box01-scale-animation-outputY-array" count="3">
+1,000000 1,000000 1,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-outputY-array" count="3">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-intanY">
+          <float_array id="Box01-scale-animation-intanY-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-intanY-array" count="3">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-outtanY">
+          <float_array id="Box01-scale-animation-outtanY-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-outtanY-array" count="3">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-interpolationY">
+          <Name_array id="Box01-scale-animation-interpolationY-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-interpolationY-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-scale-animationY">
+          <input semantic="INPUT" source="#Box01-scale-animation-inputY"/>
+          <input semantic="OUTPUT" source="#Box01-scale-animation-outputY"/>
+          <input semantic="IN_TANGENT" source="#Box01-scale-animation-intanY"/>
+          <input semantic="OUT_TANGENT" source="#Box01-scale-animation-outtanY"/>
+          <input semantic="INTERPOLATION" source="#Box01-scale-animation-interpolationY"/>
+        </sampler>
+        <channel source="#Box01-scale-animationY" target="Box01/scale.Y"/>
+      </animation>
+      <animation>
+        <source id="Box01-scale-animation-inputZ">
+          <float_array id="Box01-scale-animation-inputZ-array" count="3">
+0,000000 0,166667 0,300000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-inputZ-array" count="3">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-outputZ">
+          <float_array id="Box01-scale-animation-outputZ-array" count="3">
+1,000000 1,000000 1,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-outputZ-array" count="3">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-intanZ">
+          <float_array id="Box01-scale-animation-intanZ-array" count="3">
+0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-intanZ-array" count="3">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-outtanZ">
+          <float_array id="Box01-scale-animation-outtanZ-array" count="3">
+0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-outtanZ-array" count="3">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-scale-animation-interpolationZ">
+          <Name_array id="Box01-scale-animation-interpolationZ-array" count="3">
+ BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01-scale-animation-interpolationZ-array" count="3">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Box01-scale-animationZ">
+          <input semantic="INPUT" source="#Box01-scale-animation-inputZ"/>
+          <input semantic="OUTPUT" source="#Box01-scale-animation-outputZ"/>
+          <input semantic="IN_TANGENT" source="#Box01-scale-animation-intanZ"/>
+          <input semantic="OUT_TANGENT" source="#Box01-scale-animation-outtanZ"/>
+          <input semantic="INTERPOLATION" source="#Box01-scale-animation-interpolationZ"/>
+        </sampler>
+        <channel source="#Box01-scale-animationZ" target="Box01/scale.Z"/>
+      </animation>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="RootNode" name="RootNode">
+      <node id="Box01" name="Box01">
+        <translate sid="translate">-1,914886 -3,877941 0,000000</translate>
+        <rotate sid="rotateZ">0 0 1 0,000000</rotate>
+        <rotate sid="rotateY">0 1 0 0,000000</rotate>
+        <rotate sid="rotateX">1 0 0 0,000000</rotate>
+        <scale sid="scale">1,000000 1,000000 1,000000</scale>
+        <instance_geometry url="#Box01-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="main_material" target="#main_material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#RootNode"/>
+  </scene>
+</COLLADA>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()" xmlns:gift="*" width="800"
+                height="600"
+                historyManagementEnabled="false" layout="absolute">
+
+    <mx:Script><![CDATA[
+        import com.adobe.serialization.json.JSON;
+
+        import mx.collections.ArrayCollection;
+        import mx.controls.Alert;
+        import mx.printing.FlexPrintJob;
+        import mx.rpc.events.FaultEvent;
+        import mx.rpc.events.ResultEvent;
+        import mx.utils.ObjectUtil;
+
+        [Bindable]
+        public var modelUrl:String;
+
+        private function init():void {
+            libService.send();
+        }
+
+        private function openModel():void {
+            var item:Object = catalogList.selectedItem;
+            modelUrl = item.id;
+            viewStack.selectedChild = scene;
+        }
+
+        private function toggleFullScreen():void {
+            if (stage.displayState == StageDisplayState.NORMAL) {
+                try {
+                    stage.fullScreenSourceRect = screen;
+                    stage.displayState = StageDisplayState.FULL_SCREEN;
+                } catch (e:SecurityError) {
+                    trace("A security error occurred while switching to full screen");
+                }
+            } else {
+                stage.displayState = StageDisplayState.NORMAL;
+            }
+        }
+
+        private function print():void {
+            var printJob:FlexPrintJob = new FlexPrintJob();
+            if (printJob.start()) {
+                printJob.addObject(printMarker);
+                printJob.send();
+            }
+        }
+
+        [Bindable]
+        private var items:ArrayCollection = new ArrayCollection();
+
+        private function onFault(event:FaultEvent):void {
+            trace(event.fault.faultString);
+            Alert.show(event.fault.faultString);
+        }
+
+        private function onResult(event:ResultEvent):void {
+            var response:Object = JSON.decode(String(event.result));
+            if (response) {
+                trace(ObjectUtil.toString(response));
+                items.source = response as Array;
+            } else {
+                trace(event.result);
+                Alert.show(String(event.result));
+            }
+        }
+        ]]></mx:Script>
+
+    <mx:HTTPService id="libService" url="lib/lib.json" resultFormat="text"
+                    fault="onFault(event)" result="onResult(event)"/>
+
+    <mx:Box id="printMarker" includeInLayout="false" visible="false">
+        <mx:Image source="@Embed('images/a4_marker.png')"/>
+    </mx:Box>
+
+    <mx:ViewStack id="viewStack" width="100%" height="100%">
+        <mx:Box id="main">
+            <mx:TileList id="catalogList" dataProvider="{items}" width="100%" height="100%" rowHeight="175"
+                         columnWidth="175"
+                         itemRenderer="CatalogItemRenderer" itemDoubleClick="openModel()" doubleClickEnabled="true"
+                         selectionColor="#CCCCCC" rollOverColor="#EEEEEE"/>
+        </mx:Box>
+
+        <mx:Box id="scene" width="100%" height="100%" verticalAlign="middle" horizontalAlign="center"
+                show="scenePanel.show()" hide="scenePanel.hide()"
+                paddingBottom="5" paddingLeft="5" paddingRight="5" paddingTop="5">
+
+            <mx:VBox>
+
+                <gift:MyScenePanel id="scenePanel" modelName="{modelUrl}"/>
+
+                <mx:HBox id="previewButtons" horizontalAlign="center">
+                    <mx:Button label="Fullscreen" click="toggleFullScreen()" toggle="true"/>
+
+                    <mx:Button label="Print marker" click="print()"/>
+
+                    <mx:Button label="Mode"
+                               click="scenePanel.switchViewMode()" toggle="true" selected="{scenePanel.cameraView}"/>
+
+                    <mx:Button label="Close" click="{viewStack.selectedChild = main;}"/>
+                </mx:HBox>
+
+            </mx:VBox>
+        </mx:Box>
+
+    </mx:ViewStack>
+
+</mx:Application>
